@@ -34,7 +34,7 @@ class Grid3D:
                 for rowsza in range(rowsz):
                     x = x_start - (column_step * column)
                     y = y_start - (row_step * row)
-                    z = z_start - (rowsz_step * rowsza) #z = z_end + (rowsz_step * rowsza)
+                    z = z_start - (rowsz_step * rowsza) 
                     self.__positions.append(XYZPoint(x = x, y = y, z = z))
 
 
