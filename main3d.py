@@ -24,8 +24,8 @@ my_test_grid2 = Grid3D(grid_corners2, rows = 3, columns = 3, rowsz=3)
 
 
 # Connect to Eva
-host_ip = "http://172.16.172.1"
-token = "06e71bb28a3c06c32635938f615d674fdacd03f9"
+host_ip = "edit this-Eva's IP address" #IP address
+token = "edit this-your token" #token
 eva = Eva(host_ip, token)
 count = 0
 # Set some default poses and a default orientation
