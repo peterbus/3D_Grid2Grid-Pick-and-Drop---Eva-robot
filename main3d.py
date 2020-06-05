@@ -32,9 +32,6 @@ count = 0
 pose_home = [0.057526037, 0.7658633, -1.9867575, 0.026749607, -1.732109, -0.011505207]
 end_effector_orientation = {'w': 0.0, 'x': 0.0, 'y': 1.0, 'z': 0.0} #quaternion values
 
-# Be carefull with this dimension - depending on the type of a used gripper
-#grid_z_position: float = 0.27
-
 print("Waiting for Robot lock")
 with eva.lock():
 
