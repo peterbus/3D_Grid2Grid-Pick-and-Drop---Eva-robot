@@ -3,7 +3,7 @@ import time
 from evasdk import Eva
 from grid3d import Grid3D, GridCorners, XYZPoint
 
-# Define the x and y coordinates for 3 corners of the grid
+# Define the x, y and z coordinates for 3 corners of the grid
 grid_corners1: GridCorners = [
     XYZPoint(x = 0.25, y = 0.1, z=0.27), # Starting position
     XYZPoint(x = 0.41, y = 0.1, z=0.27), # Length of the grid
