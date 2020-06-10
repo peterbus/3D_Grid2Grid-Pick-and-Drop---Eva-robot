@@ -47,7 +47,7 @@ with eva.lock():
         print('Eva going to grid position x={:f}, y={:f}, z={:f}'.format(grid_position.x, grid_position.y, grid_position.z))
 
         # Initial hover position
-        hover_position1 = {'x': grid_position.x, 'y': grid_position.y, 'z': grid_position.z+0.10}
+        hover_position1 = {'x': grid_position.x, 'y': grid_position.y, 'z': grid_position.z+0.11}
         position_hover_angles = eva.calc_inverse_kinematics(pose_home, hover_position1, end_effector_orientation)
         eva.control_go_to(position_hover_angles['ik']['joints'], max_speed = 0.15, mode='teach')
 
@@ -64,7 +64,7 @@ with eva.lock():
         print('Eva performing action at grid waypoint')
 
         # Hover the end effector after the pick up
-        hover_position1 = {'x': grid_position.x, 'y': grid_position.y, 'z': grid_position.z+0.10}
+        hover_position1 = {'x': grid_position.x, 'y': grid_position.y, 'z': grid_position.z+0.11}
         position_hover_angles = eva.calc_inverse_kinematics(pose_home, hover_position1, end_effector_orientation)
         eva.control_go_to(position_hover_angles['ik']['joints'], max_speed = 0.15, mode='teach')
         eva.control_go_to(pose_home, max_speed = 0.15, mode='teach')
@@ -75,7 +75,7 @@ with eva.lock():
             print(additional_angle)
 
             # Initial hover position on the second grid
-            hover_position2 = {'x': grid_position.x, 'y': grid_position.y, 'z': grid_position.z+0.10}
+            hover_position2 = {'x': grid_position.x, 'y': grid_position.y, 'z': grid_position.z+0.11}
             position_hover_angles = eva.calc_inverse_kinematics(pose_home, hover_position2, end_effector_orientation)
             eva.control_go_to(position_hover_angles['ik']['joints'], max_speed = 0.15, mode='teach')
 
@@ -97,7 +97,7 @@ with eva.lock():
             print('Eva performing action at grid waypoint')
 
             # Hover the end effector
-            hover_position2 = {'x': grid_position.x, 'y': grid_position.y, 'z': grid_position.z+0.10}
+            hover_position2 = {'x': grid_position.x, 'y': grid_position.y, 'z': grid_position.z+0.11}
             position_hover_angles = eva.calc_inverse_kinematics(pose_home, hover_position2, end_effector_orientation)
             eva.control_go_to(position_hover_angles['ik']['joints'], max_speed = 0.15, mode='teach')
             eva.control_go_to(pose_home, max_speed = 0.15, mode='teach')
