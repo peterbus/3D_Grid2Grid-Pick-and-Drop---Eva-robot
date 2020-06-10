@@ -6,16 +6,16 @@ from grid3d import Grid3D, GridCorners, XYZPoint
 # Define the x and y coordinates for 3 corners of the grid
 grid_corners1: GridCorners = [
     XYZPoint(x = 0.25, y = 0.1, z=0.27), # Starting position
-    XYZPoint(x = 0.42, y = 0.1, z=0.27), # Length of the grid
-    XYZPoint(x = 0.42, y = 0.35, z=0.38), # width of the grid + maximal height of the grid
-    XYZPoint(x = 0.42, y = 0.35, z=0.27), # minimum height of the grid (minimum z position)
+    XYZPoint(x = 0.41, y = 0.1, z=0.27), # Length of the grid
+    XYZPoint(x = 0.41, y = 0.30, z=0.37), # width of the grid + maximal height of the grid
+    XYZPoint(x = 0.41, y = 0.30, z=0.27), # minimum height of the grid (minimum z position)
 ]
 # Symmetrical grid
 grid_corners2: GridCorners = [
-    XYZPoint(x = 0.25, y = -0.35, z=0.27),
-    XYZPoint(x = 0.42, y = -0.35, z=0.27),
-    XYZPoint(x = 0.42, y = -0.1, z=0.27),
-    XYZPoint(x = 0.42, y = -0.1, z=0.38),# maximal height of the grid (maximum z position)
+    XYZPoint(x = 0.25, y = -0.30, z=0.27),
+    XYZPoint(x = 0.41, y = -0.30, z=0.27),
+    XYZPoint(x = 0.41, y = -0.1, z=0.27),
+    XYZPoint(x = 0.41, y = -0.1, z=0.37),# maximal height of the grid (maximum z position)
 ]
 
 # Using the corners and an amount of rows and columns, make the Grid3D
